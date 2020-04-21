@@ -28,11 +28,20 @@ namespace BlackJack
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Card card1 = new Card();
-            
+
+            Card card2 = new Card();
             
             cardImg.Source = new BitmapImage(new Uri("https://deckofcardsapi.com/static/img/" + (card1.GetCardValue()) + (card1.GetSuitValue()) + ".png"));
+
+            cardImg2.Source = new BitmapImage(new Uri("https://deckofcardsapi.com/static/img/" + (card2.GetCardValue()) + (card2.GetSuitValue()) + ".png"));
+
+
+
+            //MessageBox.Show("https://deckofcardsapi.com/static/img/" + (card1.GetCardValue()) + (card1.GetSuitValue()) + ".png");
+            // MessageBox.Show("https://deckofcardsapi.com/static/img/" + (card2.GetCardValue()) + (card2.GetSuitValue()) + ".png");
         }
+    }
 
            
-    }
-}
+  }
+

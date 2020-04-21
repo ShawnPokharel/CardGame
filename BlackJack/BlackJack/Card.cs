@@ -42,33 +42,33 @@ namespace BlackJack
            
         }
 
-        public enum Suit
-        {
-            Clubs = 1,
-            Hearts = 2,
-            Spades = 3,
-            Diamonds = 4,
-        }
 
         public string GetSuitValue()
         {
             Random random = new Random();
 
-            int suitCardValue = random.Next(1, 5);
+
+
+            int suitCardValue = 0;
+
+            for (int i = 0; i < 5; i++)
+            {
+                suitCardValue = random.Next(4);
+            }
             string suitValue = "";
 
             switch (suitCardValue)
             {
-                case 1:
+                case 0:
                     suitValue = "H";
                     break;
-                case 2:
+                case 1:
                     suitValue = "D";
                     break;
-                case 3:
+                case 2:
                     suitValue = "C";
                     break;
-                case 4:
+                case 3:
                     suitValue = "S";
                     break;
             }
@@ -80,11 +80,20 @@ namespace BlackJack
         {
             Random random1 = new Random();
 
-            int cardValue = random1.Next(1, 14);
+            int cardValue = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                cardValue = random1.Next(13);
+            }
+
+           
             string value = "";
 
             switch(cardValue)
             {
+                case 0:
+                    value = "0";
+                    break;
                 case 1:
                     value = "A";
                     break;
@@ -113,15 +122,12 @@ namespace BlackJack
                     value = "9";
                     break;
                 case 10:
-                    value = "10";
-                    break;
-                case 11:
                     value = "J";
                     break;
-                case 12:
+                case 11:
                     value = "Q";
                     break;
-                case 13:
+                case 12:
                     value = "K";
                     break;
 
