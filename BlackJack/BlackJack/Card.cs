@@ -54,7 +54,7 @@ namespace BlackJack
         {
             Random random = new Random();
 
-            int suitCardValue = random.Next(1, 4);
+            int suitCardValue = random.Next(1, 5);
             string suitValue = "";
 
             switch (suitCardValue)
@@ -80,7 +80,7 @@ namespace BlackJack
         {
             Random random1 = new Random();
 
-            int cardValue = random1.Next(1, 12);
+            int cardValue = random1.Next(1, 14);
             string value = "";
 
             switch(cardValue)

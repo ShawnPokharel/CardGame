@@ -27,13 +27,10 @@ namespace BlackJack
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Image myImage3 = new Image();
-            BitmapImage bi3 = new BitmapImage();
-            bi3.BeginInit();
-            bi3.UriSource = new Uri("smiley_stackpanel.PNG", UriKind.Relative);
-            bi3.EndInit();
-            myImage3.Stretch = Stretch.Fill;
-            myImage3.Source = bi3;
+            Card card1 = new Card();
+            
+            
+            cardImg.Source = new BitmapImage(new Uri("https://deckofcardsapi.com/static/img/" + (card1.GetCardValue()) + (card1.GetSuitValue()) + ".png"));
         }
 
            
