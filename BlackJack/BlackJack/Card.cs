@@ -24,6 +24,7 @@ namespace BlackJack
         public int Queen { get; set; }
         public int King { get; set; }
 
+        //Constructor- dont know if we need this anymore tbh
         public Card()
         {
             Ace = 0;
@@ -42,7 +43,7 @@ namespace BlackJack
            
         }
 
-
+        //method that uses a random number generator to output the suitvalue that the api will retrieve
         public string GetSuitValue()
         {
             Random random = new Random();
@@ -76,6 +77,7 @@ namespace BlackJack
 
         }
 
+        //method that uses another random number generator to outplut the value of the card that the api will retrieve
         public string GetCardValue()
         {
             Random random1 = new Random();
