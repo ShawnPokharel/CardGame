@@ -8,27 +8,27 @@ namespace BlackJack
 {
     class Deck
     {
-
+/** public Deck()
         public Card[] Cards { get; set; }
         public Random RandomGenerator { get; set; }
 
-        public Deck()
+            
         {
             int i = 0;
             this.Cards = new Card[52];
 
-            foreach (string rank1 in Card.ValidRanks())
+            foreach (string value1 in Card.GetCardValue())
             {
-                foreach (string suit1 in Card.ValidSuits())
+                foreach (string suit1 in Card.GetSuitValue())
                 {
-                    this.Cards[i] = new Card(suit1, rank1);
+                    this.Cards[i] = new Card(suit1, value1);
                     i++;
                 }
             }
 
             this.RandomGenerator = new Random();
         }
-
+            
         public Card DrawCard()
         {
             int randomNumber;
@@ -43,6 +43,7 @@ namespace BlackJack
             Cards[randomNumber] = null;
             return drawnCard;
         }
-
+    **/
     }
+    
 }

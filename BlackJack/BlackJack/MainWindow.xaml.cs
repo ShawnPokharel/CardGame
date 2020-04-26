@@ -89,7 +89,16 @@ namespace BlackJack
 
             
 
-
+            /**
+             * If (handvalue <= 10)
+             * {
+             *  A = 11
+             * }
+             * Else If(handvalue > 10)
+             * {
+             *  A=1
+             * }
+             */
 
 
 
