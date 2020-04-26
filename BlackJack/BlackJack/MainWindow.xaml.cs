@@ -21,6 +21,8 @@ namespace BlackJack
     /// </summary>
     public partial class MainWindow : Window
     {
+        
+
         public MainWindow()
         {
             InitializeComponent();
@@ -28,6 +30,9 @@ namespace BlackJack
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
+
+
             Card card1 = new Card();
 
             
@@ -45,6 +50,7 @@ namespace BlackJack
 
             System.Threading.Thread.Sleep(500); //Need this delay otherwise it messes up lol
 
+            
            
 
             Card card2 = new Card();
@@ -57,6 +63,9 @@ namespace BlackJack
             Card2Img.Source = playerCard2;
 
             System.Threading.Thread.Sleep(500); //Need this delay otherwise it messes up lol
+
+
+
 
             Card dealerCard1 = new Card();
             BitmapImage DCard1= new BitmapImage();
@@ -78,8 +87,7 @@ namespace BlackJack
             // Set the image source.
             DealerCard2Img.Source = DCard2;
 
-
-
+            
 
 
 

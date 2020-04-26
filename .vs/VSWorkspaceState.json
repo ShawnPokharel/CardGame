@@ -1,4 +1,9 @@
 {
-  "ExpandedNodes": [],
+  "ExpandedNodes": [
+    "",
+    "\\BlackJack",
+    "\\BlackJack\\BlackJack"
+  ],
+  "SelectedNode": "\\BlackJack\\BlackJack\\MainWindow.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

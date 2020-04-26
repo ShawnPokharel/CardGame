@@ -13,6 +13,12 @@
 
         <Image x:Name="DealerCard1Img" HorizontalAlignment="Left" Height="139" Margin="189,50,0,0" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
         <Image x:Name="DealerCard2Img" HorizontalAlignment="Left" Height="139" Margin="225,50,0,0" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
+        <Button x:Name="stayBtn" Content="Stay" HorizontalAlignment="Left" Margin="574,260,0,0" VerticalAlignment="Top" Width="180" Height="38"/>
+        <Button x:Name="hitBtn" Content="Hit" HorizontalAlignment="Left" Margin="574,191,0,0" VerticalAlignment="Top" Width="180" Height="40"/>
+        <Label x:Name="DealerVlbl" Content="Dealer Value" HorizontalAlignment="Left" Margin="574,104,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PlayerVlbl" Content="Player Value" HorizontalAlignment="Left" Margin="574,135,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="dealerVamtLbl" Content="0" HorizontalAlignment="Left" Margin="691,104,0,0" VerticalAlignment="Top" Width="63"/>
+        <Label x:Name="playerVamtLbl" Content="0" HorizontalAlignment="Left" Margin="691,135,0,0" VerticalAlignment="Top" Width="63"/>
 
 
     </Grid>
