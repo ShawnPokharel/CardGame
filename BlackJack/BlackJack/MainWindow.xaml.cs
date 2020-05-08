@@ -89,7 +89,7 @@ namespace BlackJack
 
             
 
-            /**
+            /** Explained in video, but would do something like this for Aces if we got this far.
              * If (handvalue <= 10)
              * {
              *  A = 11
